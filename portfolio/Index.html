@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omkar Mane — Developer & Designer</title>
+  <meta name="description" content="Portfolio of Omkar Mane — building clean, fast and human-centered digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-overlay"></span>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Main">
+      <a href="#home" class="logo">omkar<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#work">Projects <sup>04</sup></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-resume-mobile"><a href="https://www.behance.net/gallery/225976501/OMKAR-MANE-RESUME" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <a href="https://www.behance.net/gallery/225976501/OMKAR-MANE-RESUME" target="_blank" rel="noopener" class="btn btn-small">Resume <i class="arrow">↗</i></a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="chip glass reveal"><span class="dot"></span> Available for new projects</div>
+          <h1 class="hero-title reveal">
+            <span class="line">OMKAR</span>
+            <span class="line outline">MANE</span>
+          </h1>
+          <p class="hero-sub reveal">
+            I craft <span class="typed" id="typed"></span><span class="caret">|</span><br />
+            Blending creativity, clean code and thoughtful design into smart, human-centered digital experiences.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#work" class="btn">View my work <i class="arrow">↗</i></a>
+            <a href="omkar.pdf" download class="btn btn-ghost">Download CV <i class="arrow">↓</i></a>
+          </div>
+          <div class="hero-meta reveal">
+            <div class="glass meta-card"><small>Based in</small><strong>Maharashtra, India</strong></div>
+            <div class="glass meta-card"><small>Focus</small><strong>Product • UI/UX • Web Dev</strong></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait glass tilt">
+            <img src="omkar.jpeg" alt="Portrait of Omkar Mane" id="portraitImg" />
+            <div class="portrait-fallback" id="portraitFallback">OM</div>
+            <div class="portrait-badge glass"><b>Product Interaction</b><span>UI/UX • Web Dev</span></div>
+          </div>
+          <div class="float-card glass fc-1"><span class="fc-num" data-count="20">0</span><span>+ Projects built</span></div>
+          <div class="float-card glass fc-2"><span class="fc-num" data-count="3">0</span><span>+ Years learning</span></div>
+        </div>
+      </div>
+
+      <div class="marquee glass" aria-hidden="true">
+        <div class="marquee-track">
+          <span>● UI Developer</span><span>● UX Strategy</span><span>● Web Developer</span><span>● Creative Direction</span>
+          <span>● UI Developer</span><span>● UX Strategy</span><span>● Web Developer</span><span>● Creative Direction</span>
+          <span>● UI Developer</span><span>● UX Strategy</span><span>● Web Developer</span><span>● Creative Direction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects <em>that speak</em></h2>
+          <div class="slider-ctrl">
+            <span class="counter"><b id="curSlide">01</b> / <span id="totSlide">04</span></span>
+            <button class="round glass" id="prev" aria-label="Previous project">←</button>
+            <button class="round glass" id="next" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="slider reveal" id="slider">
+          <div class="track" id="track">
+            <article class="project glass">
+              <div class="project-art art-1"><span>01</span></div>
+              <div class="project-info">
+                <div class="tags"><span>Web App</span><span>Full-Stack</span></div>
+                <h3>Portfolio OS</h3>
+                <p>A modular portfolio platform with a live CMS, dark mode and buttery animations.</p>
+                <a href="#contact" class="link">View project <i class="arrow">↗</i></a>
+              </div>
+            </article>
+            <article class="project glass">
+              <div class="project-art art-2"><span>02</span></div>
+              <div class="project-info">
+                <div class="tags"><span>E-Commerce</span><span>UI/UX</span></div>
+                <h3>ShopFlow</h3>
+                <p>A conversion-focused storefront redesign with a streamlined checkout flow.</p>
+                <a href="#contact" class="link">View project <i class="arrow">↗</i></a>
+              </div>
+            </article>
+            <article class="project glass">
+              <div class="project-art art-3"><span>03</span></div>
+              <div class="project-info">
+                <div class="tags"><span>Productivity</span><span>Mobile</span></div>
+                <h3>TaskPilot</h3>
+                <p>A clean task manager with smart reminders and a focus-first interface.</p>
+                <a href="#contact" class="link">View project <i class="arrow">↗</i></a>
+              </div>
+            </article>
+            <article class="project glass">
+              <div class="project-art art-4"><span>04</span></div>
+              <div class="project-info">
+                <div class="tags"><span>Ed-Tech</span><span>Interaction</span></div>
+                <h3>LearnLoop</h3>
+                <p>A playful learning dashboard that turns progress into delightful micro-interactions.</p>
+                <a href="#contact" class="link">View project <i class="arrow">↗</i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / CV -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-card glass reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 class="big-cv">CV<span>/ Resume @2026</span></h2>
+          <p>
+            I like keeping things transparent and easy to explore. Here you can find my complete resume and professional
+            background. Everything is organised neatly so you can browse it the way I manage my work — clean, clear and fast.
+          </p>
+          <div class="hero-cta">
+            <a href="omkar.pdf" target="_blank" rel="noopener" class="btn">Open resume <i class="arrow">↗</i></a>
+            <a href="omkar.pdf" download="Omkar-Mane-Resume.pdf" class="btn btn-ghost">Download PDF <i class="arrow">↓</i></a>
+          </div>
+        </div>
+
+        <div class="about-side reveal">
+          <div class="glass stat-card">
+            <h3>Design that thinks, builds &amp; evolves</h3>
+            <p>I merge UI/UX design with front-end development to deliver pixel-perfect, production-ready experiences.</p>
+            <div class="stats">
+              <div><b data-count="6">0</b><span>+ Live projects</span></div>
+              <div><b data-count="2">0</b><span>Startups helped</span></div>
+              <div><b data-count="100">0</b><span>% Dedication</span></div>
+            </div>
+          </div>
+          <div class="glass stack-card">
+            <h4>Creative stack</h4>
+            <p>Tools synced for speed and precision.</p>
+            <div class="stack-icons">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>Node</span><span>Figma</span><span>Git</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO / WORKFLOW -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I love to do</p>
+          <h2>Design that <em>thinks, builds &amp; evolves</em></h2>
+        </div>
+        <div class="cards-3">
+          <div class="glass feature reveal">
+            <div class="ficon">✦</div>
+            <h3>Design + Dev synergy</h3>
+            <p>I merge UI/UX design with front-end development so what is designed is exactly what ships.</p>
+          </div>
+          <div class="glass feature reveal">
+            <div class="ficon">⚡</div>
+            <h3>AI enhanced &amp; future-ready</h3>
+            <p>Modern AI tools and workflows speed up research, prototyping and iteration without losing craft.</p>
+          </div>
+          <div class="glass feature reveal">
+            <div class="ficon">☺</div>
+            <h3>Thoughtful &amp; collaborative</h3>
+            <p>Open, communicative and detail-oriented. I co-create every experience closely with clients.</p>
+          </div>
+        </div>
+
+        <div class="glass workflow reveal">
+          <h3>My design workflow</h3>
+          <ul>
+            <li><i>✓</i> Research-driven &amp; user-centered</li>
+            <li><i>✓</i> Built with Figma, VS Code &amp; Notion</li>
+            <li><i>✓</i> Enhanced with AI tools + workflows</li>
+            <li><i>✓</i> From concept → iteration → launch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">My process</p>
+          <h2>How my ideas turn into <em>creative stories</em></h2>
+        </div>
+        <div class="steps">
+          <div class="glass step reveal">
+            <span class="step-no">01</span>
+            <h3>Discover &amp; Define</h3>
+            <p>We dive deep into your goals, audience and brand to uncover insights and define a clear direction.</p>
+          </div>
+          <div class="glass step reveal">
+            <span class="step-no">02</span>
+            <h3>Design &amp; Build</h3>
+            <p>With strategy in place, we craft stunning visuals and high-performing digital solutions tailored to you.</p>
+          </div>
+          <div class="glass step reveal">
+            <span class="step-no">03</span>
+            <h3>Launch &amp; Grow</h3>
+            <p>We bring your vision to life, optimise for performance and support your success after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container skills-grid">
+        <div class="reveal">
+          <p class="eyebrow">How do I do it</p>
+          <h2 class="skills-title">Skills that drive <em>results</em></h2>
+          <a href="#about" class="btn btn-ghost">Know more about me <i class="arrow">↗</i></a>
+        </div>
+        <div class="accordion reveal" id="accordion">
+          <div class="acc-item glass open">
+            <button class="acc-head"><span class="num">(01)</span><span class="ttl">Creative Thinking, AI &amp; Problem Solving</span><i class="plus">+</i></button>
+            <div class="acc-body"><div>
+              <p>I love exploring ideas that mix creativity, technology and human behaviour — approaching challenges from fresh angles to find smart, simple solutions.</p>
+              <div class="pills"><span>Prompt Engineering</span><span>Ideation</span><span>Systems Thinking</span><span>Strategic Design</span><span>Storytelling</span></div>
+            </div></div>
+          </div>
+          <div class="acc-item glass">
+            <button class="acc-head"><span class="num">(02)</span><span class="ttl">Front-End Development &amp; Prototyping</span><i class="plus">+</i></button>
+            <div class="acc-body"><div>
+              <p>Turning designs into responsive, accessible and performant interfaces with clean, maintainable code.</p>
+              <div class="pills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Responsive UI</span></div>
+            </div></div>
+          </div>
+          <div class="acc-item glass">
+            <button class="acc-head"><span class="num">(03)</span><span class="ttl">UX Design &amp; Research</span><i class="plus">+</i></button>
+            <div class="acc-body"><div>
+              <p>User flows, wireframes and prototypes grounded in research so every decision has a reason.</p>
+              <div class="pills"><span>Wireframing</span><span>Prototyping</span><span>User Flows</span><span>Usability Testing</span></div>
+            </div></div>
+          </div>
+          <div class="acc-item glass">
+            <button class="acc-head"><span class="num">(04)</span><span class="ttl">Creative Campaigns</span><i class="plus">+</i></button>
+            <div class="acc-body"><div>
+              <p>Visual identities and campaign assets that carry a brand story consistently across channels.</p>
+              <div class="pills"><span>Branding</span><span>Visual Design</span><span>Motion</span><span>Social Creative</span></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section" id="journal">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Insights &amp; inspiration</p>
+          <h2>Explore my <em>journal</em></h2>
+        </div>
+        <div class="cards-3">
+          <a href="#contact" class="glass blog reveal">
+            <div class="blog-img b1"></div>
+            <div class="blog-meta"><span>Oct 2026</span><span>3 min</span></div>
+            <h3>Why glassmorphism still works in modern UI</h3>
+          </a>
+          <a href="#contact" class="glass blog reveal">
+            <div class="blog-img b2"></div>
+            <div class="blog-meta"><span>Aug 2026</span><span>4 min</span></div>
+            <h3>From Figma to production: keeping design intact</h3>
+          </a>
+          <a href="#contact" class="glass blog reveal">
+            <div class="blog-img b3"></div>
+            <div class="blog-meta"><span>Jun 2026</span><span>2 min</span></div>
+            <h3>Using AI as a creative partner, not a shortcut</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact glass reveal">
+          <div class="contact-left">
+            <p class="eyebrow">Conversations are like windows</p>
+            <h2>Let's build something <em>meaningful together</em></h2>
+            <div class="person glass">
+              <div class="avatar"><img src="omkar.jpeg" alt="Omkar Mane" onerror="this.style.display='none'" /><span>OM</span></div>
+              <div><b>Omkar Mane</b><small>Developer &amp; Designer</small></div>
+            </div>
+            <div class="email-box glass">
+              <div><small>Do you prefer email?</small><strong id="emailText">omkarmane495@gmail.com</strong></div>
+              <button class="round glass" id="copyEmail" aria-label="Copy email">⧉</button>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Let's connect</h3>
+            <label>Full name*<input type="text" name="name" placeholder="Your name" required /></label>
+            <label>Email address*<input type="email" name="email" placeholder="you@example.com" required /></label>
+            <label>Message<textarea name="message" rows="4" placeholder="Tell me about your project..."></textarea></label>
+            <button type="submit" class="btn">Submit <i class="arrow">↗</i></button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="glass footer-card">
+        <div class="footer-top">
+          <div class="footer-about">
+            <h4>Know more …</h4>
+            <p>Join my journey — how AI is changing design, interface craft, voice UI, agentic UX and more.</p>
+          </div>
+          <div>
+            <h5>Main links</h5>
+            <a href="#home">Home</a><a href="#about">About</a><a href="#work">Projects</a><a href="#journal">Journal</a>
+          </div>
+          <div>
+            <h5>Get in touch</h5>
+            <a href="mailto:omkarmane495@gmail.com">omkarmane495@gmail.com</a>
+            <a href="tel:+91-9112958001">+91-9112958001</a>
+            <span class="status"><i class="dot"></i> Online · Maharashtra, India</span>
+          </div>
+          <div>
+            <h5>Socials</h5>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="https://x.com/" target="_blank" rel="noopener">X / Twitter ↗</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="logo">omkar<span>.</span></span>
+          <span>© <span id="year">2026</span> Omkar Mane. All rights reserved.</span>
+          <a href="#home" class="to-top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
